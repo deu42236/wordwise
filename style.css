@@ -1,3 +1,19 @@
+:root[data-theme="light"]{
+    --text: #000000;
+    --background: #ffffff;
+    --primary: #f4f4f4;
+    --secondary: #f7931a;
+    --accent: #FCCE93;
+}
+:root[data-theme="dark"] {
+    --text: #ffffff;
+    --background: #161313;
+    --primary: #000000;
+    --secondary: #e28008;
+    --accent: #6d3f03;
+  }
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -6,7 +22,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: white;
+    background-color: var(--background);
     overflow-x: hidden;
 }
 
@@ -31,14 +47,14 @@ p{
 }
 
 .satColor{
-    color: #f7931a
+    color: var(--secondary)
 }
 
 #dict li {
     width: 80%;
     margin: 0 auto;
     padding: 20px 0;
-    background-color: #f4f4f4; 
+    background-color: var(--primary); 
     /* f7931a20  */
     margin-top: 10px;
     border: 0;
@@ -55,7 +71,7 @@ li p{
     padding-left: 40px;
 }
 #dict  :hover{
-    background-color: #FCCE93;
+    background-color: var(--accent);
     transition: 0.1s;
 }
 
@@ -74,7 +90,7 @@ li p{
 
 /* nav */
 nav {
-    background-color: white;
+    background-color: var(--background);
     box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
@@ -99,7 +115,7 @@ nav a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
+    color: var(--text);
     transition: 0.3s;
 }
 nav a:hover {
