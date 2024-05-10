@@ -31,41 +31,45 @@
     <div id="heading">
         <h1>Slovníček</h1>
     </div>
-    <div id="satoshidiv">
-        <h2 class="price"></h2>
-    </div>
 
-    <div class="container">
-        <h2>Bitcoin</h2>
-        <p>Decentralizovaná síť sloužící k uchování a přenosu hodnoty. Občas také první nebo hlavní vrstva Bitcoinu. </p>
-    </div>
-    <div class="container">
-        <h2>bitcoin</h2>
-        <p>Jednotka hodnoty, maximální počet bude (téměř) 21 milionů. Většinou se zkracuje jako BTC</p>
-    </div>
-    <div class="container">
-        <h2>satoshi</h2>
-        <p>Nejmenší jednotka v blockchainu. 1 BTC = 100 000 000 satoshi. Pojmenováno podle tvůrce Bitcoinu "Satoshi Nakamoto". Často se zkracuje jako "sat (saty, satů)" nebo anglickým "sats"</p>
-    </div>
-    <div class="container">
-        <h2>lightning network</h2>
-        <p>Bitcoinová platební síť. Druhá vrstva Bitcoinu, která řeší cenu a rychlost plateb. Zkracuje se jako LN nebo jenom Lightning</p>
-    </div>
-    <div class="container">
-        <h2>Platební kanál</h2>
-        <p>Kanál se otvírá a uzavírá na Bitcoinovém blockchainu. Mezi tím je možno udělat prakticky neomezeno transakcí na druhé vrstvě - LN</p>
-    </div>
-    <div class="container">
-        <h2>Peněženka</h2>
-        <p>Software, případně i HW, který uchovává seed, vytváří transakce a podepisuje.</p>
-    </div>
-    <div class="container">
-        <h2>seed</h2>
-        <p>12 nebo 24 anglických slov, které slouží k obnovení peněženky. Dříve pouze 128 nebo 256 bitů. </p>
-    </div>
-    <div class="container">
-        <h2>fee (poplatek)</h2>
-        <p>Poplatek za transakci. Na hlavní vrstvě se platí v satoshi za byte. </p>
+    <ul id="dict">
+        <li>
+            <h2>Bitcoin</h2>
+            <p>Decentralizovaná síť sloužící k uchování a přenosu hodnoty. Občas také první nebo hlavní vrstva Bitcoinu. </p>
+        </li>
+        <li>
+            <h2>bitcoin</h2>
+            <p>Jednotka hodnoty, maximální počet bude (téměř) 21 milionů. Většinou se zkracuje jako BTC</p>
+        </li>
+        <li>
+            <div id="satoshidiv">
+                <h2>satoshi</h2>
+                <h2 class="price"></h2>
+            </div>
+            <p>Nejmenší jednotka v blockchainu. 1 BTC = 100 000 000 satoshi. Pojmenováno podle tvůrce Bitcoinu "Satoshi Nakamoto". Často se zkracuje jako "sat (saty, satů)" nebo anglickým "sats"</p>
+
+        </li>
+        <li>
+            <h2>lightning network</h2>
+            <p>Bitcoinová platební síť. Druhá vrstva Bitcoinu, která řeší cenu a rychlost plateb. Zkracuje se jako LN nebo jenom Lightning</p>
+        </li>
+        <li>
+            <h2>Platební kanál</h2>
+            <p>Kanál se otvírá a uzavírá na Bitcoinovém blockchainu. Mezi tím je možno udělat prakticky neomezeno transakcí na druhé vrstvě - LN</p>
+        </li>
+        <li>
+            <h2>Peněženka</h2>
+            <p>Software, případně i HW, který uchovává seed, vytváří transakce a podepisuje.</p>
+        </li>
+        <li>
+            <h2>Seed</h2>
+            <p>12 nebo 24 anglických slov, které slouží k obnovení peněženky. Dříve pouze 128 nebo 256 bitů. </p>
+        </li>
+        <li>
+            <h2>fee (poplatek)</h2>
+            <p>Poplatek za transakci. Na hlavní vrstvě se platí v satoshi za byte. </p>
+        </li>
+    </ul>
 
     <script src="script.js"></script>
 </body>

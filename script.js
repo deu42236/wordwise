@@ -1,3 +1,4 @@
+//sidebar/navbar worki
 function hideSidebar() {
     const sidebar =document.querySelector(".sidebar");
     sidebar.style.display = "none";
@@ -35,11 +36,11 @@ function show_czk(data) {
       mena = "koruna";
     else if (czkpersats < 5)
       mena = "koruny";
-    h2.innerHTML = `<span>${czkpersats} ${mena} za <a class="satColor">satoshi</a></span>`;
+    h2.innerHTML = `<i><span>${czkpersats} ${mena} za <a class="satColor">satoshi</a></span></i>`;
   }
   else // pokud je sat více než koruna
   {
-    h2.innerHTML = `<span>${satsperczk} <a class="satColor">satoshi</a> za korunu</span>`;
+    h2.innerHTML = `<i><span>${satsperczk} <a class="satColor">satoshi</a> za korunu</span></i>`;
   }
   div = document.getElementById("satoshidiv");
   before = document.getElementById("satoshi");
