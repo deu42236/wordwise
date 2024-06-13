@@ -13,6 +13,10 @@ body.dark {
     --accent: #6d3f03;
   }
 
+html {
+    scroll-behavior: smooth;
+    transition:  ease-in-out;
+}
 
 * {
     margin: 0px;
@@ -32,7 +36,7 @@ img {
 }
 
 h1{
-    font-size: 50px;
+    font-size: 65px;
     font-weight: 600;
     position: relative;
 }
@@ -106,15 +110,14 @@ li p{
     display: grid;
     column-gap: 20px;
     row-gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    width: 60%;
+    grid-template-columns: auto auto;
+    width: 20%;
     margin: auto;
 }
 .card{
     position: relative;
 }
 .card img{
-    width: 100%;
     height: auto;
 }
 
@@ -137,28 +140,47 @@ li p{
     opacity: 1;
   }
 
-
 .card{
     padding: 20px;
     background-color: var(--primary);
     border-radius: 20px;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
 
+
+#rightSide{
+    position: absolute;
+    right: 0;
+    opacity: 0;
+}
+
+#leftSide{
+    position: absolute;
+    left: 0;
+    opacity: 0;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+.walletsText h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.container .item{
+    display: flex;
+    align-items:start;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--primary);
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
 
 /* nav */
 nav {
@@ -167,7 +189,7 @@ nav {
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 999;
     /* margin-bottom: 20px; */
 }
 nav ul {
@@ -239,10 +261,41 @@ nav li:first-child {
         display: block;
         transition: ease;
     }
+    .container{
+        flex-direction: column;
+    }
 }
 
+/* footer */
+footer {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/backgroundbar.png');
+    background-position: -200px;
+    height: 50px;
+    color: var(--text);
+}
 
+#git {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    font-size: 20px;
+    text-decoration: none;
+}
 
+#git a {
+    color: var(--text);
+    transition: ease-in-out 0.5s;
+}
+
+#git a:hover {
+    color: var(--accent);
+    transition: ease-in-out 0.5s;
+}
 
 /* kykykyks */
 
@@ -294,3 +347,5 @@ nav li:first-child {
     text-align: center;
     line-height: 16px;
   }
+
+

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d1f71ffc64.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -21,8 +22,8 @@
         <ul>
             <!-- fullsize -->
             <li class="hideOnMobile"><a href="index.html"><img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=032" width="45px"></a></li>
-            <li class="hideOnMobile"><a href="slovnik.html">1</a></li>
-            <li class="hideOnMobile"><a href="wallets.html">2</a></li>
+            <li class="hideOnMobile"><a href="slovnik.html">Don't be stupid</a></li>
+            <li class="hideOnMobile"><a href="wallets.html">Pick Your Wallet</a></li>
             <li class="hideOnMobile">
                 <label class="switch">
                 <input type="checkbox" id="theme-switcher">
@@ -32,20 +33,74 @@
         </ul>
     </nav>
     
-<!--<div id="heading">
-        <h1>Wallets</h1>
-    </div> -->
-    <div id="mainImg">
-        <img src="img\prototype.svg" alt="">
-        
-        <div id="hoverRight">
-            <img src="img\left_black.svg" alt="">
-        </div>
+    <div id="heading">
+            <h1>NOW PICK</h1>
+    </div>
 
-        <div id="hoverLeft">
-            <img src="img\right_black.svg" alt="">
+    <div id="mainImg">
+        <a href="#custodial"><img src="img\transparent.png" id="leftSide" alt="" height="100%" width="50%"></a>
+        <img id="kys" src="img\prototype.svg" alt="" height="100%">
+        <a href="#selfCustody"><img src="img\transparent.png" id="rightSide" alt="" height="100%" width="50%"></a>
+    </div>
+
+
+    <div class="walletsText" id="custodial">
+        <h1>custody</h1>
+        <div class="container">
+            <div id="summary" class="item">
+                <p>Tyto peněženky jsou výrazně jednodušší k používání než Self Custody, ale jsou taky méně anonymní a nemáte plnou kontrolu nad svými prostředky (tak jako v komerčních bankách). Tyto společnosti ale mají motivaci k bezproblémovému chodu, je to jejich bussiness. V této peněnce mějte jenom tolik, kolik jste ochotni nosit v tradiční (fiatové) peněžence!</p>
+            </div>
+            <div id="bitlifi" class="item">
+                <h2>Bitlifi</h2>
+                <p>Bitlifi je peněženka vyvíjená českou společností 21M group, stojící za českou směnárnou Anycoin. Má českou podporu, a celá aplikace je v českém a slovenském jazyce. Aplikace má účty na bázi telefonních čísel, přes které se uživatel přihlašuje. Unikátní funkce Bitlifi je, že si uživatelé mohou posílat sats na jejich telefonní čísla, aplikace si importuje kontakty z, Bitlifi jim vždy založí účet když nějaké dostanou. Díky této mechanice je používání Bitlfii často jednodušší, než bankovní účet.</p>
+                <img src="https://play-lh.googleusercontent.com/DIBCpCCWDFohQHG_qmXqZuYSx2gdj8tJ-ZxbP879kf51sHRu0VDsV_evwKMGe8xv884=w240-h480-rw" alt="">
+            </div>
+
+            <div id="WoS" class="item">
+                <h2>Wallet of Satoshi</h2>
+                <p>Wallet of Satoshi je pravděpodobně nejdoporučovanější peněženka pro začátečníky. Má přihlašování přes email a díky obrovské komunitě uživatelů opravdu minimální poplatky, které jsou mezi uživateli WoS nulové. Je super jednoduchá 
+                </p>
+                <img src="https://play-lh.googleusercontent.com/MHHdrewkgoxuJZn9jqk7Mv6UAb70fB2fsDk5hUzRtXtV3r89aFGn9idjLpbKq6bMh4q_=w240-h480-rw" alt="">
+            </div>
+
+            <div id="blink" class = item>
+                <h2>Blink</h2>
+                <p>Blink, původně Bitcoin Beach wallet vznikla kvůli projektu “Bitcoin Beach” v Salvádoru, což byl projekt, kde se všichni obchodníci v jisté oblasti používat a testovat tento nový monetární systém. Unikátní funkce této peněženky jsou “Stablesats”. Ta umožňuje uživateli využívat rychlosti a levnost Lightning Networku, ale bez volatility Bitcoinu. Stablesats jsou cenou vázány na Americký Dolar, který byl (a stále je) měnou používanou v El Salvadoru. Dnes tato země uznává Bitcoin na stejné úrovni jako Dolar, dají se v něm platit daně a zisky z pohybu ceny Bitcoinu nejsou zdanitelné, tedy ani převody mezi Stablesats a bitcoinem.</p>
+                <img src="https://play-lh.googleusercontent.com/a-fx1CdnEb8bswjDvvcxZYbf7ZtQ9wY4GsslocnuVIG8fU8qnv8Ke7s3qHBsQ6xkcQ=w240-h480-rw" alt="">
+
+            </div>
         </div>
     </div>
 
+
+    <div class="walletsText" id="selfCustody">
+        <h1>SelfCustody</h1>
+        <div class="container">
+            <div id="summarry" class="item">
+                <p>Tato kategorie je opravdu jen pro pokročilé a ty, kteří mají v plánu v této peněžence uchovávat více peněz nebo jim obzvlášť záleží na soukromí. Pokud nevíte co děláte, může vás to i něco stát, bacha na to.</p>
+            </div>
+            <div id="phoenix" class="item">
+                <h2>Phoenix</h2>
+                <p>Phoenix je takový kompromis mezi těmito kategoriemi. Uživatel má svých 12 slov, tedy naprostou kontrol nad svými prostředky, ale nepotřebuje svůj vlastní “node”, toto zařízení spravuje firma ACINQ. Za každou odeslanou transakci si firma bere 1% z odeslané částky, což je jakýsi poplatek za tuto službu. Toto řešení má obrovskou uživatelskou základnu a dobrý tým vývojářů, kteří prakticky okamžitě implementují nové funkce a standardy. Peněženka je z velké části open-source.</p>
+            <img src="https://play-lh.googleusercontent.com/-COWRaEnelfOsbaatm7-DfUt_Fp6odGTngBXXdqySg4jkJ1A7eWdpV3fr0a7y9gpCuuZ=w240-h480-rw" alt="">
+            </div>
+            <div id="zeus" class="item">
+                <h2>Zeus</h2>
+                <p>Zeus integruje 2 věci. Node a samotnou peněženku. Narozdíl od Phoenixu je tedy aplikace větší (co se týče velikosti), ale neobsahuje žádné poplatky vývojářům a je plně open-source. Jedna z nevýhod oproti Phoenixu je dlouhé zapínání aplikace, musí si vždy stáhnout aktuální data o síti, což může trvat i 30 vteřin. Dá se připojit i k jinému nodu, Zeus pak slouží jenom jako hezké UI k ovládání tohoto zařízení na dálku.</p>
+                <img src="https://play-lh.googleusercontent.com/qqbYJs1BgqF6Pt2-_R-1Ea7ICDSbc9HKaz13zZQqAxifTdx-KbdBBdypRUs0iyo18ttS=w240-h480-rw" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <p>© 2024 - Všechna práva vyhrazena</p>
+            <div id="git"><a href="https://github.com/deu42236/wordwise"><i class="fa-brands fa-github"></i></a></div>
+        </div>
+    </footer>
 </body>
 </html>
