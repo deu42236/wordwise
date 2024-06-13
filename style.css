@@ -94,10 +94,14 @@ li p{
     font-weight: 600;
 }
 
+/* wallets2.html */
+#mainImg{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+}
 
-
-
-
+/* wallet.html */
 .gridCont{
     display: grid;
     column-gap: 20px;
@@ -164,7 +168,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 100;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 nav ul {
     width: 100%;

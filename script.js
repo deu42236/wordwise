@@ -35,8 +35,10 @@ function hideSidebar() {
     });
   });
 
+
+  url = "https://deu42236.github.io/wordwise/slovnik.html#"
    //copylink from /slovnik.html
   function clipboardLink(val) {
-    text = 'https://deu42236.github.io/wordwise/slovnik.html#'+val
+    text = url+val
     navigator.clipboard.writeText(text)
   } 
