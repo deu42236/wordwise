@@ -9,6 +9,7 @@
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/d1f71ffc64.js" crossorigin="anonymous"></script>
 
+
 </head>
 <body>
     <nav>
@@ -16,14 +17,14 @@
             <!-- Phone -->
             <li onclick="hideSidebar()"><a href="#"><i class="material-symbols-outlined">close</i></a></li>
             <li><a href="index.html"><img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=032" width="45px"></a></li>
-            <li><a href="slovnik.html">1p</a></li>
-            <li><a href="wallets.html">2p</a></li>
+            <li><a href="slovnik.html">Slovnik</a></li>
+            <li><a href="wallets2.html">Pick Your Wallet</a></li>
         </ul>
         <ul>
             <!-- fullsize -->
             <li class="hideOnMobile"><a href="index.html"><img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=032" width="45px"></a></li>
-            <li class="hideOnMobile"><a href="slovnik.html">Don't be stupid</a></li>
-            <li class="hideOnMobile"><a href="wallets.html">Pick Your Wallet</a></li>
+            <li class="hideOnMobile"><a href="slovnik.html">Slovnik</a></li>
+            <li class="hideOnMobile"><a href="wallets2.html">Pick Your Wallet</a></li>
             <li class="hideOnMobile">
                 <label class="switch">
                 <input type="checkbox" id="theme-switcher">
@@ -38,9 +39,9 @@
     </div>
 
     <div id="mainImg">
-        <a href="#custodial"><img src="img\transparent.png" id="leftSide" alt="" height="100%" width="50%"></a>
-        <img id="kys" src="img\prototype.svg" alt="" height="100%">
-        <a href="#selfCustody"><img src="img\transparent.png" id="rightSide" alt="" height="100%" width="50%"></a>
+        <a href="#custodial"><img src=".\img\transparent.png" id="leftSide" alt="" height="100%" width="50%"></a>
+        <img id="kys" src=".\img\prototype.svg" alt="" height="100%">
+        <a href="#selfCustody"><img src=".\img\transparent.png" id="rightSide" alt="" height="100%" width="50%"></a>
     </div>
 
 
@@ -49,13 +50,23 @@
         <div class="container">
             <div id="summary" class="item">
                 <p>Tyto peněženky jsou výrazně jednodušší k používání než Self Custody, ale jsou taky méně anonymní a nemáte plnou kontrolu nad svými prostředky (tak jako v komerčních bankách). Tyto společnosti ale mají motivaci k bezproblémovému chodu, je to jejich bussiness. V této peněnce mějte jenom tolik, kolik jste ochotni nosit v tradiční (fiatové) peněžence!</p>
+                <ul>
+                    <li class="plus">Jednoduchost</li>
+                    <li class="plus">Pěkné a jedoduché UI</li>
+                    <li class="plus">Nelze udělat nic moc špatně</li>
+                    <li class="minus">Teoretická možnost cenzury</li>
+                    <li class="minus">Méně funkcí pro power users</li>
+                </ul>
             </div>
             <div id="bitlifi" class="item">
                 <h2>Bitlifi</h2>
                 <p>Bitlifi je peněženka vyvíjená českou společností 21M group, stojící za českou směnárnou Anycoin. Má českou podporu, a celá aplikace je v českém a slovenském jazyce. Aplikace má účty na bázi telefonních čísel, přes které se uživatel přihlašuje. Unikátní funkce Bitlifi je, že si uživatelé mohou posílat sats na jejich telefonní čísla, aplikace si importuje kontakty z, Bitlifi jim vždy založí účet když nějaké dostanou. Díky této mechanice je používání Bitlfii často jednodušší, než bankovní účet.</p>
                 <img src="https://play-lh.googleusercontent.com/DIBCpCCWDFohQHG_qmXqZuYSx2gdj8tJ-ZxbP879kf51sHRu0VDsV_evwKMGe8xv884=w240-h480-rw" alt="">
             </div>
+            </div>
 
+
+        <div class="container">
             <div id="WoS" class="item">
                 <h2>Wallet of Satoshi</h2>
                 <p>Wallet of Satoshi je pravděpodobně nejdoporučovanější peněženka pro začátečníky. Má přihlašování přes email a díky obrovské komunitě uživatelů opravdu minimální poplatky, které jsou mezi uživateli WoS nulové. Je super jednoduchá 
@@ -67,7 +78,7 @@
                 <h2>Blink</h2>
                 <p>Blink, původně Bitcoin Beach wallet vznikla kvůli projektu “Bitcoin Beach” v Salvádoru, což byl projekt, kde se všichni obchodníci v jisté oblasti používat a testovat tento nový monetární systém. Unikátní funkce této peněženky jsou “Stablesats”. Ta umožňuje uživateli využívat rychlosti a levnost Lightning Networku, ale bez volatility Bitcoinu. Stablesats jsou cenou vázány na Americký Dolar, který byl (a stále je) měnou používanou v El Salvadoru. Dnes tato země uznává Bitcoin na stejné úrovni jako Dolar, dají se v něm platit daně a zisky z pohybu ceny Bitcoinu nejsou zdanitelné, tedy ani převody mezi Stablesats a bitcoinem.</p>
                 <img src="https://play-lh.googleusercontent.com/a-fx1CdnEb8bswjDvvcxZYbf7ZtQ9wY4GsslocnuVIG8fU8qnv8Ke7s3qHBsQ6xkcQ=w240-h480-rw" alt="">
-
+            </div>
             </div>
         </div>
     </div>
@@ -78,6 +89,14 @@
         <div class="container">
             <div id="summarry" class="item">
                 <p>Tato kategorie je opravdu jen pro pokročilé a ty, kteří mají v plánu v této peněžence uchovávat více peněz nebo jim obzvlášť záleží na soukromí. Pokud nevíte co děláte, může vás to i něco stát, bacha na to.</p>
+                <ul>
+                    <li class="plus">Suverenita</li>
+                    <li class="plus">Naprostá kontrola</li>
+                    <li class="plus">Více funkcí pro power users</li>
+                    <li class="minus">Větší náchylnost k chybám</li>
+                    <li class="minus">Složitější setup</li>
+                    <li class="minus">Často větší náklady/poplatky</li>
+                </ul>
             </div>
             <div id="phoenix" class="item">
                 <h2>Phoenix</h2>

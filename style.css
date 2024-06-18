@@ -29,6 +29,9 @@ body {
     background-color: var(--background);
     color: var(--text)
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 
 img {
     display: block;
@@ -111,14 +114,29 @@ li p{
     column-gap: 20px;
     row-gap: 20px;
     grid-template-columns: auto auto;
-    width: 20%;
+    width: 100%;
     margin: auto;
+}
+.gridCont h2{
+    width: 60%;
+    font-size: 22px;
 }
 .card{
     position: relative;
+    display: flex;
 }
 .card img{
-    height: auto;
+    margin-right: 40px;
+    min-width: 367px;
+}
+@media(max-width: 1300px){
+    .card img{
+        width: 350px;
+        height: 330px;
+    }
+    .gridCont{
+        grid-template-columns: auto;
+    }
 }
 
 .card .hoverText {
@@ -250,7 +268,7 @@ nav li:first-child {
     padding: 20px 0;
     text-align: center;
 }
-@media(max-width: 550px) {
+@media(max-width: 600px) {
     .sidebar {
         width: 100%;
     }
@@ -264,7 +282,35 @@ nav li:first-child {
     .container{
         flex-direction: column;
     }
+
 }
+
+.plus, .minus{
+    list-style: none;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+.plus::before{
+    /* content: '+'; */
+    content: '+';
+    /* font-family:"Font Awesome 5 Free"; */
+    font-family:monospace;
+    font-size: 20px;
+    padding-right: 6px;
+    color: lime
+}
+
+.minus::before{
+    content: '-';
+    font-family:monospace;
+    font-size: 20px;
+    font-weight: 900;
+    padding-right: 6px;
+    color:salmon;
+}
+
+
 
 /* footer */
 footer {
@@ -349,3 +395,28 @@ footer {
   }
 
 
+/* button */
+
+  .button-33 {
+    background-color: var(--secondary);
+    border-radius: 100px;
+    box-shadow: var(--accent) 0 -25px 18px -14px inset;
+    color: var(--primary);
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-33:hover {
+    box-shadow: var(--accent) 0 -25px 18px -14px inset;
+    transform: scale(1.05) rotate(-1deg);
+  }
