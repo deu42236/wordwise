@@ -268,7 +268,7 @@ nav li:first-child {
     padding: 20px 0;
     text-align: center;
 }
-@media(max-width: 600px) {
+@media(max-width: 850px) {
     .sidebar {
         width: 100%;
     }
